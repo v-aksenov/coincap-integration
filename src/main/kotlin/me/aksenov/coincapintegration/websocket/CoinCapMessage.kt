@@ -1,3 +1,5 @@
 package me.aksenov.coincapintegration.websocket
 
-data class CoinCapMessage()
+import java.math.BigDecimal
+
+data class CoinCapMessage(val bitcoin: BigDecimal? = null, val ethereum: BigDecimal? = null)
